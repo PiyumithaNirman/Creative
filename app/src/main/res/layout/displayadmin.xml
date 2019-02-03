@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayAdmin"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:background="@drawable/green">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/Baddemployee"
+            android:background="@drawable/salary"
+            android:layout_width="296dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="260dp"
+            android:onClick="onButtonClick"
+            android:textSize="20sp"
+            android:textColor="#FF0000"
+            android:text="Add Employee"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="95dp" />
+
+        <Button
+            android:id="@+id/Broll"
+            android:background="@drawable/leaves"
+            android:layout_width="296dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="380dp"
+            android:onClick="onButtonClick"
+            android:textSize="20sp"
+            android:textColor="#FF0000"
+            android:text="Add Role"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="95dp" />
+
+
+        <Button
+            android:id="@+id/Bothour"
+            android:background="@drawable/company"
+            android:layout_width="296dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="500dp"
+            android:textSize="20sp"
+            android:textColor="#FF0000	"
+            android:onClick="onButtonClick"
+            android:text="Add Ot Hour"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="95dp" />
+        <Button
+            android:id="@+id/Bedditprofile"
+            android:background="@drawable/leaves"
+            android:layout_width="296dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="140dp"
+            android:onClick="onButtonClick"
+            android:textSize="20sp"
+            android:textColor="#FF0000"
+            android:text="Edit Profile"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="95dp" />
+
+
+        <Button
+            android:id="@+id/Bleavereqests"
+            android:background="@drawable/company"
+            android:layout_width="296dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:textColor="#FF0000	"
+            android:onClick="onButtonClick"
+            android:text="Leave Requests"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="95dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolBar"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:background="@color/colorAccent"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:elevation="4dp"
+            app:title="Creative Project Manager"/>
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity = "start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"/>
+
+
+
+</android.support.v4.widget.DrawerLayout>
+

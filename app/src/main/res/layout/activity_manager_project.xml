@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5722"
+    android:padding="15dp"
+    tools:context="com.example.piyumitha.good.ManagerProject">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Add Project Form"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editProjenam"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#f498ad"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Project Name"
+        android:inputType="textPersonName"
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:id="@+id/linearOuter"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editProjenam"
+        android:layout_marginTop="20dp"
+        android:background="#f498ad">
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Type"
+            android:inputType="textPersonName"
+            android:textColor="#000" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/ediProBug"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linearOuter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#f498ad"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Budject"
+        android:inputType="textPersonName"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/ediProdis"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ediProBug"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#f498ad"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Description"
+        android:inputType="textPersonName"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/buttonSubmitPro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ediProdis"
+        android:layout_marginTop="20dp"
+        android:text="Add Project Finance" />
+
+    <Button
+        android:id="@+id/buttonProjectShow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonSubmitPro"
+        android:layout_marginTop="20dp"
+        android:text="Show All" />
+
+
+</RelativeLayout>

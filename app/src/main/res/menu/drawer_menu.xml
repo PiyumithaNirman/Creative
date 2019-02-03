@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_company"
+            android:icon="@drawable/ic_home"
+            android:title="Company"/>
+       <item android:id="@+id/nav_account"
+           android:icon="@drawable/ic_account"
+           android:title="Account"/>
+        <item android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search"
+            android:title="Search"/>
+    </group>
+
+    <item android:title="communicate">
+       <menu>
+           <item android:id="@+id/nav_setting"
+               android:icon="@drawable/ic_setting"
+               android:title="Setting"/>
+           <item android:id="@+id/nav_feedback"
+               android:icon="@drawable/ic_feedback"
+               android:title="Feed Back"/>
+           <item android:id="@+id/nav_ratethisapp"
+               android:icon="@drawable/ic_rate"
+               android:title="Rate This App"/>
+
+       </menu>
+
+    </item>
+
+</menu>

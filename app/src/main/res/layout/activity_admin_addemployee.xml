@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5722"
+    android:padding="15dp"
+    tools:context="com.example.piyumitha.good.AdminAddroll">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Add Employee"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editemName"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="#f498ad"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Employee name"
+                android:inputType="textPersonName"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/editemUe"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editemPass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="#f498ad"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter User Name"
+                android:inputType="textPersonName"
+                android:textColor="#000" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#f498ad">
+
+                <Spinner
+                    android:id="@+id/spinner_role"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/editemEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editemRole"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="#f498ad"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Employee Email"
+                android:inputType="textPersonName"
+                android:textColor="#000" />
+
+
+            <EditText
+                android:id="@+id/editemSpe"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editemTele"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="#f498ad"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Speciality"
+                android:inputType="textPersonName"
+                android:textColor="#000" />
+
+
+            <Button
+                android:id="@+id/buttonSubmitem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editemAge"
+                android:layout_marginTop="20dp"
+                android:text="Add Employee" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

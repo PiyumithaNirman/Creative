@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/hhhh"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/textView_style"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="464dp"
+        android:fontFamily="sans-serif-light"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:text="Creative Project Manager Registration"
+        android:textFontWeight="10"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ed_name"
+        style="@style/editText_style"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Bsignupbutton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="453dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#c8ccc9" />
+
+    <EditText
+        android:id="@+id/ed_email"
+        style="@style/editText_style"
+        android:layout_width="267dp"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="237dp"
+        android:ems="10"
+        android:hint="example@gmail.com"
+        android:inputType="textPersonName"
+        android:textColorHint="#c8ccc9" />
+
+    <EditText
+        android:id="@+id/ed_username"
+        style="@style/editText_style"
+        android:layout_width="267dp"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+        android:ems="10"
+        android:hint="User Name"
+        android:textColorHint="#c8ccc9"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ed_pass1"
+        style="@style/editText_style"
+        android:layout_width="267dp"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="240dp"
+        android:ems="10"
+        android:hint="Password(6 or more)"
+        android:inputType="textPassword"
+        android:textColorHint="#c8ccc9" />
+
+    <EditText
+        android:id="@+id/ed_pass2"
+        style="@style/editText_style"
+        android:layout_width="265dp"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColorHint="#c8ccc9" />
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/button_style"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp"
+        android:onClick="onSignUpClick"
+        android:text="Sign Up"
+        android:visibility="visible" />
+
+
+</RelativeLayout>
